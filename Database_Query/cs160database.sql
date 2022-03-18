@@ -237,4 +237,3 @@ CREATE TABLE feedback (
 		ON UPDATE CASCADE
         ON DELETE SET NULL
 );
-

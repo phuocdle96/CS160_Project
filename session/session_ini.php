@@ -1,7 +1,9 @@
 <?php
-if (session_name() == null || session_name() == "") {
-	session_start();
+if (session_status() != PHP_SESSION_ACTIVE) {
+  session_start();
+
 }
+
 
 function getUserIpAddress() {
 	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
@@ -20,7 +22,7 @@ function getUserIpAddress() {
 
 if (isset($_SESSION['currentIP'])) {
 	if ($_SESSION['currentIP'] != getUserIpAddress()) {
-		header("Location: ../logout.php");
+		header("Location: ../signup_login/logout.php");
 	}
 }
 else {

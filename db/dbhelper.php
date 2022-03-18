@@ -51,3 +51,5 @@ function executeSingleResult($sql) {
 
 	return $row;
 }
+
+?> 

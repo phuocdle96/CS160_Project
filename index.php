@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
 if (session_name() == ""){
     session_start();
 }
@@ -64,4 +65,7 @@ if (session_name() == ""){
 
 <?php
     include('footer.php');
+=======
+header("Location: home/index.php");
+>>>>>>> b41dfd25b03de1fb28483fbc7b84cbb3ffac7ccf
 ?>
